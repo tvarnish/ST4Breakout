@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name RSComponents)(type KiCad)(uri ${KIPRJMOD}/RSComponents.pretty)(options "")(descr ""))
+  (lib (name SilkscreenGraphics)(type KiCad)(uri ${KIPRJMOD}/SilkscreenGraphics.pretty)(options "")(descr ""))
+)

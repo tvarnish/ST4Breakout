@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RSComponents)(type Legacy)(uri ${KIPRJMOD}/RSComponents.lib)(options "")(descr "RS Component Symbols"))
+)
