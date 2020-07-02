@@ -47,9 +47,9 @@ Gerber renders for the front and back of the PCB.
 ## Circuit Description
 I've provided a basic explanation for the operation of the breakout board below, in case it helps you to decide if the board will work for your mount (if it isn't a Skywatcher EQ3-2). **Note: I can't guarantee if this will work for your mount/drive! Use at your own risk!**
 
-Each axis has a positive and negative trigger pin. Applying a 5V signal to one of these pins will "trigger" the telescope axis to move in that specific direction.
+Each "axis" (e.g. RA/DEC) has a positive and negative trigger pin (to drive the motor forwards or backwards). Applying a 5V signal to one of these pins will "trigger" the telescope axis to move in that specific direction.
 
-Each trigger pin is connected (via a current limiting resistor) to the input of a quad-input optocoupler (TIL196). This connects the microcontroller circuit to the telescope motor drive circuit, isolating each side. Triggering an axis will connect the corresponding wire in the ST-4 pin to ground, completing the controller circuit. The optocoupler IC is required to ensure that the voltage/current on the motor controller side doesn't break the microcontroller.
+Each trigger pin is connected (via a current limiting resistor) to one input of a quad-input optocoupler IC (TIL196). This connects the microcontroller circuit to the telescope motor drive circuit, isolating each side. Triggering an axis will connect the corresponding wire in the ST-4 cable to ground, completing the controller-side circuit. The optocoupler IC is necessary to ensure that the higher voltage/current on the motor controller side doesn't break the microcontroller!
 
 <p align="center">
     <img width="85%" style="max-width:900px;" src="./images/schematic.png" alt="Labelled schematic for the breakout board.">
